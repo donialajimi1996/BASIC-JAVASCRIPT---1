@@ -13,10 +13,7 @@ function bold() {
   element.classList.toggle("bold");
 }
 
-function color() {
-  var element = document.getElementById("P");
-  element.classList.toggle("color");
-}
+
 function align_left() {
   var element = document.getElementById("P");
   element.classList.toggle("align-left");
@@ -41,4 +38,9 @@ function font_family(selectTag) {
 function changeSize(n) {
   var s = document.getElementById("P");
   s.style.fontSize = n.value + "px";
+}
+
+function changecolor(n) {
+  var s = document.getElementById("P");
+  s.style.color = n.value +"";
 }
