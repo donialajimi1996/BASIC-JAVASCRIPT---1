@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BASIC-javascript-1</title>
+    <link rel="icon" type="image/png" href="res/download.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id="tab">
+      <ul id="head">
+        <button class="color_button">
+          <li>
+            <a href="#news">
+              <select onchange="font_family(this);" size="0">
+                <option>Georgia</option>
+                <option>Palatino Linotype</option>
+                <option>Book Antiqua</option>
+                <option>Times New Roman</option>
+                <option>Arial</option>
+                <option>Helvetica</option>
+                <option>Arial Black</option>
+                <option>Impact</option>
+                <option>Lucida Sans Unicode</option>
+                <option>Tahoma</option>
+                <option>Verdana</option>
+                <option>Courier New</option>
+                <option>Lucida Console</option>
+              </select>
+            </a>
+          </li>
+        </button>
+
+        <button class="color_button" >
+          <li><a href="#contact"> 
+              <label for="sel1"></label>
+              <select class="form-control" id="sel1" onchange="changeSize(this);">
+                <option>4</option>
+                <option>8</option>
+                <option>12</option>
+                <option>16</option>
+                <option>20</option>
+                <option>24</option>
+                <option>28</option>
+                <option>32</option>
+                <option>36</option>
+                <option>40</option>
+                <option>44</option>
+                <option>48</option>
+                <option>52</option>
+                <option>56</option>
+                <option>58</option>
+              </select>
+             </a></li>
+        </button>
+
+        <button class="color_button" type="button" onclick="bold()">
+          <li>
+            <a href="#about"><i class="fas fa-bold"></i> </a>
+          </li>
+        </button>
+        <button class="color_button" type="button" onclick="underline()">
+          <li>
+            <a href="#about"><i class="fas fa-underline"></i></a>
+          </li>
+        </button>
+        <button class="color_button" type="button" onclick="italic()">
+          <li>
+            <a href="#about"><i class="fas fa-italic"></i></a>
+          </li>
+        </button>
+        <button class="color_button">
+          <li>
+            <a href="#about" type="button" onclick="color()">
+              <i class="fas fa-font"> </i
+            ></a>
+          </li>
+        </button>
+        <button class="color_button" type="button" onclick="align_left()">
+          <li>
+            <a href="#about"><i class="fas fa-align-left"></i></a>
+          </li>
+        </button>
+        <button class="color_button" onclick="align_center()">
+          <li>
+            <a href="#about"><i class="fas fa-align-center"></i></a>
+          </li>
+        </button>
+        <button class="color_button" onclick="align_right()">
+          <li>
+            <a href="#about"><i class="fas fa-align-right"></i></a>
+          </li>
+        </button>
+        <button class="color_button" onclick="justify()">
+          <li>
+            <a href="#about"><i class="fas fa-align-justify"></i></a>
+          </li>
+        </button>
+      </ul>
+    </div>
+    <div id="paper">
+      <div id="P">
+        <h1>BASIC JAVASCRIPT</h1>
+        <p>
+          We're going to make a program that looks like Microsoft Word. There
+          will be one paragrah and a bunch of buttons. Each button will have an
+          onclick attribute that will link to a different javascript function.
+          These buttons will have unique names and should do the following :
+          -one button to make the paragraph bold -one button to make the
+          paragraph italic -one button to make the paragraph underlined -one
+          dropdown list that will have a bunch of fonts, and when you click on
+          one the paragraph’s font will change to it. - one dropdown list that
+          will have a bunch of numbers (choose whatever you want) and when you
+          click on it the paragraph’s font size changes to that.
+        </p>
+        
+      </div>
+    </div>
+  </body>
+  <script src="js/main.js"></script>
+</html>
